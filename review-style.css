@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.review-section{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.review-container{
+    background: linear-gradient(45deg, white, #fff1f5, white);
+}

@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poiret One', serif;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Start Landing Page */
+
+/* Social media section */
+
+.social-media {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media a {
+    font-weight: bold;
+    color:#f32a63;
+    transition: .5s ease-in-out;
+}
+
+.fa-facebook{
+    color: #4267B2;
+
+}
+
+/* header and Nav section */
+
+.title-and-nav-section {
+    background:linear-gradient(to right, #fff1f5, #fff 35%, #fff 55%, #fff1f5);
+    padding: 2em 0;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw;
+}
+
+.material-symbols-outlined{
+    transition: .5s ease-in-out;
+}
+
+.material-symbols-outlined:hover{
+    transform: scale(1.50);
+    color:#f32a63;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 .5rem;
+    text-transform: uppercase;
+}
+
+.nav-dropdown{
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    left: -15%;
+    border-radius: 2.5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropbtn {
+    background: none;
+    color: black;
+    padding-top: .5em;
+    font-size: 1.4em;
+    font-style: normal;
+    font-family: 'Poiret One';
+    border: none;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 1.4em;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn:hover {
+    font-weight: bold;
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown-content a:hover {background-color: #fff1f5;}
+
+/* PRODUCT SECTION */
+
+.product{
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.product-container{
+    background: url(img/many_mail_dogs.jpg) no-repeat top center fixed;
+    height: 400px;
+    padding: 2em 0;
+    overflow: hidden;
+    background-size: cover;
+    display: grid;
+}
+
+.product h2{
+    font-size: 75px;
+    font-weight: bold;
+    margin-left: 4vw;
+}
+
+.product span{
+    color: #f32a63;
+}
+
+.product a{
+    color: #fff;
+    margin: 1em auto;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+
+.product a:hover{
+    color:#f32a63;
+    transform: scale(1.50);
+}
+
+.product h3{
+    text-align: right;
+    margin-right: 4vw;
+}
+
+/* SUBSCRIBE SECTION */
+
+.email-sub {
+    text-align: center;
+    padding: 4em 0 5em 0;
+    background:linear-gradient(to right, #fff1f5, #fff 35%, #fff 55%, #fff1f5);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.email-container{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.email-sub h2 {
+    font-size: 3em;
+    padding-bottom: .3em;
+    text-transform: capitalize;
+}
+
+.email-sub span{
+    color:#f32a63;
+}
+
+.email-sub p {
+    font-size: 1.1em;
+    padding-bottom: .5em;
+    text-transform: capitalize;
+}
+
+.email-input {
+    margin-top: .5em;
+    width: 80%;
+    font-size: 1.2em;
+    padding: .5em 1.5em .5em .5em;
+    border-radius: 10px;
+}
+
+.sub-btn button{
+    margin-top: .5em;
+    margin-left: -1em;
+    font-size: 1.2em;
+    padding: .5em;
+    background-color: #f32a63;
+    color: #fff;
+    border: 2.5px solid #f32a63;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.sub-btn button:hover{
+    transform: scale(1.05);
+}
+
+.sub-btn{
+    display: flex;
+    align-items: center;
+}
+
+/* review section */
+
+.testemonials{
+    text-align: center;
+    overflow: hidden;
+    font-size: clamp(20px, 2em, 40px);
+    padding-bottom: 2em;
+    width: 85vw;
+    margin: 2em auto 2em;
+}
+
+.testemonials h3 {
+    text-transform: capitalize;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.testemonials span{
+    color:#f32a63;
+}
+
+.review-slider{
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+}
+
+.review-container{
+    background: linear-gradient(to right, #fff1f5, #fff 35%, #fff 55%, #fff1f5);
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0 0 10px;
+}
+
+.review-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    min-width: fit-content;
+}
+
+.user-name{
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.review-date{
+    font-size: .5em;
+    font-style: italic;
+}
+
+.user-name, .review-date{
+    text-align: left;
+    margin: .5em 0 .3em 4vw;
+}
+
+.review-quote{
+    font-size: 1.5em;
+    margin: 1.6em 0;
+    padding: 0 1em;
+}
+
+.product-review{
+    display: grid;
+    padding: .6em 1em .6em .6em;
+    place-items: center;
+    padding: -.5em 0;
+}
+
+.product-review a{
+    font-size: .8em;
+    text-transform: capitalize;
+    margin: -1em 0;
+    padding: -1em 0;
+}
+
+.product-review a:hover{
+    font-weight: bold;
+}
+
+.product-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: .2em;
+    border-radius: .7em;
+}
+
+.star{
+    width: .7em;
+    height: .7em;
+}
+
+
+/* babes section */
+
+.babes{
+    text-align: center;
+    margin: 1em auto 2em;
+    background: linear-gradient(to right, #fff1f5, #fff 35%, #fff 55%, #fff1f5);
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+.babes span{
+    color:#f32a63;
+}
+
+.babes h3 {
+    margin: .5em 0 1.5em;
+    font-size: 2em;
+    text-transform: capitalize;
+    padding-top: 1em;
+    
+}
+
+.babes_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
+    max-width: min-content;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+.babes_grid img {
+    opacity: 0.7;
+    width: 20vw;
+    object-fit: cover;
+    border-radius: .5em;
+    transition: all .7s ease-in-out;
+
+}
+
+.babes_grid img:hover{
+    opacity: 1;
+}
+
+/* footer section */
+
+.footer{
+    width: 100%;
+    margin: 1em auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img{
+    width: 70px;
+    height: 40px;
+    margin-bottom: 1em;
+}
+
+.footer p{
+    text-align: center;
+}
+
+/* media queries */
+
+/* END LANDING PAGE */
+
+
+
+/* START LOGIN PAGE - INCLUDES ACCOUNT AND PASSWORD RECOVERY PAGES*/
+
+/* LOGIN */
+
+.login, .recovery, .sign-up{
+    text-align: center;
+    padding: 3em 0;
+    background: linear-gradient(to right, #fff1f5, #fff 35%, #fff 55%, #fff1f5);
+}
+
+.login h1, .recovery h1, .sign-up h1 {
+    color:#f32a63;
+    margin: -1em 0;
+    border-top: 3px solid #f32a63;
+    border-radius: 50%;
+    padding: 2em 0 1em;
+
+}
+
+.form-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.email-login, .password-login {
+    margin-top: .5em;
+    width: 50%;
+    font-size: 1.2em;
+    padding: .5em 1.5em;
+    border-radius: 10px;
+}
+
+form input{
+    margin: 1em 0;
+}
+
+.forgot-password-link{
+    display: block;
+    margin: -.5em 24vw 0 0;
+}
+
+.sign-in-btn{
+    margin: .3em auto .7em;
+    font-size: 1.2em;
+    padding: .5em;
+    background-color: #f32a63;
+    color: #fff;
+    border: 2.5px solid #f32a63;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    display: block;
+}
+
+.sign-in-btn:hover{
+    transform: scale(1.15);
+}
+
+.login a{
+    transition: .5s ease-in-out;
+}
+
+.login a:hover {
+    transform: scale(1.10);
+    color:#f32a63;
+    
+}
+
+.create-acc-link{
+    margin-top: .5em;
+    display: block;
+}
+
+/* RECOVERY */
+
+.recovery h1 span{
+    color: #000;
+}
+
+.recovery p{
+    margin: 1.1em 0 1em;
+}
+
